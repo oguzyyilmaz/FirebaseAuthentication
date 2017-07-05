@@ -61,7 +61,6 @@ public class MainActivity extends Activity implements GoogleApiClient.OnConnecti
     @ViewById(R.id.normalSignBtn)
     Button normalSignBtn;
 
-    private CallbackManager callbackManager;
 
     @AfterViews
     void onCreate () {
@@ -82,6 +81,10 @@ public class MainActivity extends Activity implements GoogleApiClient.OnConnecti
 
     }
 
+    @Click(R.id.connectWithFbButton)
+    void connectWithFacebook() {
+        startActivity(new Intent(MainActivity.this, FacebookLogin.class));
+    }
     @Click(R.id.googleSignBtn)
     void signin() {
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
