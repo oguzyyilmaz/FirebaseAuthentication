@@ -98,12 +98,13 @@
             android:text="Sign In" />
 
         <Button
-            android:id="@+id/fbSignBtn"
+            android:id="@+id/connectWithFbButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:text="  connect_with_facebook"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
 
